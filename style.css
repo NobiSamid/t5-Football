@@ -79,7 +79,7 @@ nav {
 }
 
 .banner button:hover i {
-    transform: scale(3) rotate(-360deg) translateX(100px);
+    transform: scale(5) rotate3d(1, 0, 0, 5turn) translateX(50px);
     transition: transform 2s ease-in-out;
 }
 
@@ -146,8 +146,36 @@ figure {
     background-color: rgba(255, 255, 255, 0.207);
 }
 
+.bottom-half h1 {
+    font-size: 48px;
+    line-height: 60px;
+    margin: 15% 15% 0 20%;
+}
+
+.bottom-half p {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0 15% 0 20%;
+}
+
 .bottom-half img {
     width: 100%;
+}
+
+.bottom-half button {
+    width: 173px;
+    height: 44px;
+    margin-left: 20%;
+}
+
+.bottom-half button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.bottom-half button i {
+    margin-left: 5px;
 }
 
 /* footer area */
@@ -156,4 +184,19 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.logo img {
+    width: 485px;
+    height: 110px;
+}
+
+.social-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+.copyright {
+    font-size: 18px;
+    line-height: 24px;
 }
