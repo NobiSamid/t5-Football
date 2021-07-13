@@ -1,0 +1,159 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles or utilities */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+button {
+    background-color: #E02C6D;
+    border: none;
+}
+
+
+/* Header section */
+header {
+    background-color: #2D25A0;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.nav-option a,
+.banner h1,
+.banner button a,
+.fa-arrow-right {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-option a {
+    margin: 10px;
+    line-height: 24px;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.nav-option button {
+    width: 123px;
+    height: 44px;
+}
+
+.nav-option button img {
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+}
+
+/* Banner area */
+
+.banner-section {
+    display: flex;
+}
+
+.banner {
+    width: 50%;
+}
+
+.banner h1 {
+    font-size: 64px;
+    line-height: 80px;
+    margin: 15% 15% 0 20%;
+}
+
+.banner button {
+    width: 168px;
+    height: 44px;
+    margin-left: 20%;
+    margin-bottom: 20%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner button:hover i {
+    transform: scale(3) rotate(-360deg) translateX(100px);
+    transition: transform 2s ease-in-out;
+}
+
+.banner button a {
+    font-size: 16px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.banner button i {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* main area */
+
+/* first section of main area */
+
+main {
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding-left: 180px;
+    padding-right: 210px;
+    margin-top: 70px;
+}
+
+figure {
+    background-color: rgba(255, 255, 255, 0.207);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.player img {
+    width: 100%;
+}
+
+/* secound section of main area */
+
+.bottom-section {
+    display: flex;
+    margin-top: 165px;
+}
+
+.bottom-half {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.207);
+}
+
+.bottom-half img {
+    width: 100%;
+}
+
+/* footer area */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
