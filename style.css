@@ -70,6 +70,13 @@ nav {
     font-size: 16px;
 }
 
+.nav-option:hover {
+    background-color: #100a6a;
+    border-radius: 5px;
+    transform: scale(1.5) rotate3d(0, 1, 0, -1turn);
+    transition: transform 1s ease-in;
+}
+
 .nav-option button {
     width: 123px;
     height: 44px;
@@ -80,11 +87,6 @@ nav {
     width: 24px;
     height: 24px;
     margin: 8px;
-}
-
-.nav-left:hover .nav-option {
-    transform: rotate3d(0, 1, 0, -1turn);
-    transition: transform 1s ease-in;
 }
 
 
