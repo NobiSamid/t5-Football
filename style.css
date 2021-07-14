@@ -21,6 +21,7 @@ button {
 /***************************
  Header area 
  **************************/
+
 header {
     background-color: #2D25A0;
 }
@@ -81,6 +82,12 @@ nav {
     margin: 8px;
 }
 
+.nav-left:hover .nav-option {
+    transform: rotate3d(0, 1, 0, -1turn);
+    transition: transform 1s ease-in;
+}
+
+
 /* Banner area */
 
 .banner-section {
@@ -107,10 +114,7 @@ nav {
     justify-content: center;
 }
 
-.banner button:hover i {
-    transform: scale(5) rotate3d(1, 0, 0, 5turn) translateX(50px);
-    transition: transform 2s ease-in-out;
-}
+
 
 .banner button a {
     font-size: 16px;
@@ -124,6 +128,11 @@ nav {
     display: flex;
     align-items: center;
     margin: 5px;
+}
+
+.banner button:hover i {
+    transform: scale(5) rotate3d(1, 0, 0, 5turn) translateX(50px);
+    transition: transform 2s ease-in-out;
 }
 
 .banner img {
@@ -153,13 +162,13 @@ figure {
     margin: 0px;
 }
 
+.player img {
+    width: 100%;
+}
+
 figure:hover img {
     transform: scale(1.2);
     transition: transform 0.5s ease-in-out;
-}
-
-.player img {
-    width: 100%;
 }
 
 /* secound section of main area */
@@ -240,9 +249,27 @@ Media Query
 /* Mobile device  */
 
 @media only screen and (max-width:688px) {
+
+
     nav {
-        display: none;
+        flex-direction: column;
+        align-items: flex-start;
     }
+
+    .nav-left {
+        position: sticky;
+        width: 100%;
+        left: 0;
+        flex-direction: column;
+        transition: 0.7s;
+        background-color: #C0392B;
+        margin-left: 10px;
+    }
+
+    .nav-right .nav-option button {
+        margin-left: 10px;
+    }
+
 
     .banner-section,
     .bottom-section {
