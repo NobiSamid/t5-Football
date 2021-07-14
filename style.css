@@ -5,6 +5,11 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 button {
@@ -13,7 +18,9 @@ button {
 }
 
 
-/* Header section */
+/***************************
+ Header area 
+ **************************/
 header {
     background-color: #2D25A0;
 }
@@ -101,17 +108,11 @@ nav {
     width: 100%;
 }
 
-/* main area */
+/********************
+ main area 
+ ********************/
 
 /* first section of main area */
-
-main {
-    background-image: url(images/bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
 
 .top-section {
     display: grid;
@@ -120,7 +121,7 @@ main {
     grid-row-gap: 30px;
     padding-left: 180px;
     padding-right: 210px;
-    margin-top: 70px;
+    padding-top: 70px;
 }
 
 figure {
@@ -138,7 +139,9 @@ figure {
 
 .bottom-section {
     display: flex;
+    align-items: stretch;
     margin-top: 165px;
+    padding-bottom: 160px;
 }
 
 .bottom-half {
@@ -178,7 +181,9 @@ figure {
     margin-left: 5px;
 }
 
-/* footer area */
+/********************** 
+footer area 
+**********************/
 
 footer {
     display: flex;
@@ -199,4 +204,17 @@ footer {
 .copyright {
     font-size: 18px;
     line-height: 24px;
+}
+
+/******************** 
+Media Query 
+*********************/
+@media only screen and (max-width:688px) {
+    .banner-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200%;
+    }
+
 }
