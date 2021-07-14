@@ -28,9 +28,30 @@ header {
 /* Navigation bar */
 nav {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 50px;
+    padding-top: 40px;
+
+
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+
+}
+
+.nav-right {
+    margin-right: 150px;
 }
 
 .nav-option a,
@@ -51,6 +72,7 @@ nav {
 .nav-option button {
     width: 123px;
     height: 44px;
+    display: inline-flex;
 }
 
 .nav-option button img {
@@ -131,6 +153,11 @@ figure {
     margin: 0px;
 }
 
+figure:hover img {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+
 .player img {
     width: 100%;
 }
@@ -209,6 +236,9 @@ footer {
 /******************** 
 Media Query 
 *********************/
+
+/* Mobile device  */
+
 @media only screen and (max-width:688px) {
     nav {
         display: none;
@@ -261,4 +291,37 @@ Media Query
         padding-left: 20px;
     }
 
+}
+
+/* Tablate devices */
+
+@media only screen and (min-width:689px) and (max-width:991px) {
+
+    .nav-left {
+        margin-left: 15px;
+    }
+
+    .nav-right {
+        margin-right: 20px;
+    }
+
+    .banner-section,
+    .bottom-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .top-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 24px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .banner h1,
+    .banner button {
+        margin-left: 50px;
+
+    }
 }
