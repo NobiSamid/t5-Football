@@ -209,12 +209,19 @@ footer {
 /******************** 
 Media Query 
 *********************/
-@media only screen and (max-width:688px) {
-    .banner-section {
+@media only screen and (max-width:1376px) {
+
+    .banner-section,
+    .bottom-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 200%;
+    }
+
+    .top-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px;
     }
 
 }
