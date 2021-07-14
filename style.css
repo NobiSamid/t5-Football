@@ -222,9 +222,13 @@ Media Query
     }
 
     .banner,
-    .banner h1 {
+    .banner h1,
+    .bottom-half,
+    .bottom-half h1,
+    .bottom-half p {
         width: 96%;
         margin-left: 16px;
+        margin-right: 16px;
     }
 
     .banner button {
@@ -238,6 +242,18 @@ Media Query
         grid-row-gap: 24px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .bottom-half button {
+        width: 173px;
+        height: 44px;
+        margin-left: 16px;
+        margin-top: 24px;
+        margin-bottom: 30px;
+    }
+
+    .bottom-half button a {
+        font-size: 16px;
     }
 
     .logo img {
